@@ -3,3 +3,4 @@ export const urls: { [key: string]: string } = {
   PDP_WITH_ID: '/rest/appapi/V2/products/id/',
   LISTING: '/rest/appapi/V2/categories/products',
 };
+
