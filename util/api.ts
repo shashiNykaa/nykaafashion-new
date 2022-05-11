@@ -1,6 +1,7 @@
+import {ApiCall} from '../@types/common';
 const BASE_URL = process.env.BASE_URL;
 
-export const apiCall: ApiCall = async (method, endpoint, body) => {
+export const apiCall: ApiCall = async (method :any, endpoint:any, body:any) => {
   try {
     const response = await fetch(`${endpoint}`, {
       method,
@@ -8,7 +9,7 @@ export const apiCall: ApiCall = async (method, endpoint, body) => {
       body: JSON.stringify(resolveBody(body)),
     });
     const jsonResponse = await response.json();
-    console.log('json resonse', jsonResponse);
+    // console.log('json resonse', jsonResponse);
     return jsonResponse;
   } catch (err) {
     console.log(err, `ERROR in API CALL`);

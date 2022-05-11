@@ -1,3 +1,4 @@
 import MainLayout from './MainLayout';
+import AnalyticsInitialize from './intializeAnalytics';
 
-export { MainLayout };
+export { MainLayout, AnalyticsInitialize };

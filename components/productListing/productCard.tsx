@@ -3,7 +3,7 @@ import Link from "next/link";
 import cs from "classnames";
 import Image from "next/image";
 
-const ProductCard = ({ data, type='' }) => {
+const ProductCard = ({ data, type='' } : any) => {
   return (
     <div className={cs("hover:shadow-md m-8")}>
       <Link href={data?.actionUrl} passHref>

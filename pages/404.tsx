@@ -16,7 +16,7 @@ function NotFoundError() {
         <div data-test={'corrupt-message'} className="corruptmsg">
           {TEXT.CORRUPT_MSG}
         </div>
-        <Link href="/" className="goBack">
+        <Link href="/">
           {TEXT.HOME_LINK_LABEL}
         </Link>
       </div>

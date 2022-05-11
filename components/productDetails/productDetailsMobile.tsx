@@ -1,15 +1,8 @@
-import { useRouter } from 'next/router';
-import { useIsDesktop } from ''
+import cs from 'classnames';
 
-const ProductDetailsMobile = () => {
-  const router = useRouter()
-  const { pid, slug } = router.query;
-  
-  return (
-  <p>
-    ProductDetailsMobile: {pid}{slug}
-  </p>
-  )
+const ProductDetailsMobile = ({ details }: any) => {
+  const { id } = details?.product;
+  return <p>ProductDetailsDesktop : {id}</p>;
 }
 
 export default ProductDetailsMobile;
